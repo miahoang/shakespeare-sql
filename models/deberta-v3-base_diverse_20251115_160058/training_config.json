@@ -1,0 +1,31 @@
+{
+  "args": {
+    "ambrosia_path": "finetuning/ambrosia_with_unanswerable_validated.csv",
+    "ambiqt_path": "finetuning/ambiqt_authors_ambrosia_format.csv",
+    "spider_path": "data/spider_data/reformatted/spider_ambrosia_format.csv",
+    "model_name": "microsoft/deberta-v3-base",
+    "max_length": 1024,
+    "config_path": "finetuning/models/deberta-v3-base_20251029_221116/training_config.json",
+    "output_dir": "finetuning/models/deberta-v3-base_diverse_20251115_160058",
+    "num_epochs": 50,
+    "batch_size": 32,
+    "learning_rate": 3.0860579740535376e-05,
+    "seed": 42
+  },
+  "loaded_from_config": "finetuning/models/deberta-v3-base_20251029_221116/training_config.json",
+  "dataset_composition": {
+    "train": "500 Ambrosia + 500 AmbiQT + 250 Spider",
+    "validation": "250 Ambrosia + 250 AmbiQT + 100 Spider",
+    "test": "Full Ambrosia test set (695)"
+  },
+  "hyperparameters": {
+    "learning_rate": 3.0860579740535376e-05,
+    "batch_size": 32,
+    "warmup_steps": 580,
+    "weight_decay": 0.24251920443493832,
+    "dropout": 0.1261534422933427,
+    "max_grad_norm": 0.6465081710095758,
+    "lr_reduce_factor": 0.5105398159072941,
+    "lr_reduce_patience": 2
+  }
+}

@@ -1,0 +1,43 @@
+CLASSIFICATION REPORT - TEST SET (OVERALL)
+================================================================================
+              precision    recall  f1-score   support
+
+          AA       0.89      0.94      0.91       131
+          AU       0.99      0.93      0.96       309
+           U       0.95      0.99      0.97       255
+
+    accuracy                           0.95       695
+   macro avg       0.94      0.95      0.95       695
+weighted avg       0.96      0.95      0.95       695
+
+
+================================================================================
+PER-QUESTION-TYPE BREAKDOWN - TEST SET
+================================================================================
+
+Question Type: U
+  Total: 255
+  Correct: 253
+  Accuracy: 0.9922
+  Predictions breakdown:
+    Predicted as U: 253 (99.2%)
+    Predicted as AA: 2 (0.8%)
+    Predicted as AU: 0 (0.0%)
+
+Question Type: AA
+  Total: 131
+  Correct: 123
+  Accuracy: 0.9389
+  Predictions breakdown:
+    Predicted as U: 5 (3.8%)
+    Predicted as AA: 123 (93.9%)
+    Predicted as AU: 3 (2.3%)
+
+Question Type: AU
+  Total: 309
+  Correct: 287
+  Accuracy: 0.9288
+  Predictions breakdown:
+    Predicted as U: 9 (2.9%)
+    Predicted as AA: 13 (4.2%)
+    Predicted as AU: 287 (92.9%)
