@@ -82,33 +82,6 @@ pip install -r requirements.txt
 pip install torch transformers sentence-transformers vllm tqdm
 ```
 
-## Data Setup
-
-Download the data archive from the link provided and unzip it into the `data/` folder at the project root:
-
-```bash
-# From the project root
-unzip <downloaded-file>.zip -d data/
-```
-
-After unzipping, the `data/` directory should contain:
-
-```
-data/
-├── ambrosia/
-│   └── ambrosia_with_unanswerable_validated.csv
-├── AmbiQT/
-│   └── ambiqt_ambrosia_format.csv
-├── bird/
-│   ├── bird_minidev_ambrosia_format.csv
-│   └── bird_train_ambrosia_format.csv
-├── spider/
-│   └── spider_ambrosia_format.csv
-└── vectordb_cache/             # Created automatically on first run
-```
-
-Each CSV references SQLite `.db` files via the `db_file_full` column — these database files must also be present in the paths referenced by the CSV.
-
 ## Running an Evaluation
 
 ### Step 1 — Start the Qwen vLLM server (SQL generation)
